@@ -13,7 +13,7 @@ app.use("/location", LocationRoutes);
 // Connecting with MongoDB
 mongoose
   .connect(
-    "mongodb+srv://admin:nodeAPI1@backend.ybcklkj.mongodb.net/Weather?retryWrites=true&w=majority&appName=Backend"
+    "mongodb+srv://admin:nodeAPI1@password.ybcklkj.mongodb.net/Weather?retryWrites=true&w=majority&appName=Backend"
   )
   .then(() => {
     console.log("Connected to DB");
