@@ -1,0 +1,1 @@
+weather api which takes info on weather from 3rd party api stores it in db.
