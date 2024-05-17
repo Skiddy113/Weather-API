@@ -68,11 +68,11 @@ router.post("/weather/resource", async (req, res) => {
     }
     // Make the request to the weather API with the provided location query
     const response = await axios.get(
-      `http://api.weatherapi.com/v1/current.json?key=8b59c756a5a4430ea61171734242804&q=${encodeURIComponent(
+      `http://api.weatherapi.com/v1/current.json?key=yourkey=${encodeURIComponent(
         location
       )}`
     );
-    // Extract relevant data from the API response
+    // Extract relevant data from the API response 8b59c756a5a4430ea61171734242804&q
     const apiData = response.data;
     const processedData = {
       locn_name: apiData.location.name,
